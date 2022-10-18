@@ -1,4 +1,4 @@
-package main.java.com.ho.lib;
+package com.ho.lib;
 
 public class lib {
     private String name = "";

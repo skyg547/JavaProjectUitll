@@ -3,7 +3,7 @@ package com.ho.lib;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import main.java.com.ho.lib.lib;
+import com.ho.lib.lib;
 
 /**
  * Unit test for simple App.

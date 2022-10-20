@@ -28,7 +28,13 @@ dependencies {
 }
 */
 
+def arr = ["one", "two", "three", "four","five"];
 
+arr.each{s -> task "$s" {
+    doLast {
+        println("this is $s task");
+    }
+}}
 
 task hello {
     doLast {

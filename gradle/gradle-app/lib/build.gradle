@@ -28,8 +28,21 @@ dependencies {
 }
 */
 
+
+
 task hello {
-doLast {
-    println();
-    println("welcom gradle");
-} }
+    doLast {
+        println();
+        println("welcom gradle");
+
+        def total = 0;
+        for(def i in 1..num.toInteger()){
+            total += i;
+        }
+        println("total: " + total);
+    } 
+
+    doFirst{
+        println("start");
+    }
+}

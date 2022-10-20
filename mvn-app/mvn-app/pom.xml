@@ -37,14 +37,34 @@
       <artifactId>aspectjrt</artifactId>
       <version>1.6.10</version>
     </dependency>
+    <!-- presistence api-->
     <dependency>
-      <groupId>com.ho</groupId>
-      <artifactId>mvn-lib</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <groupId>org.eclipse.persistence</groupId>
+      <artifactId>javax.persistence</artifactId>
+      <version>2.2.0</version>
+    </dependency>
+    <!-- jpa implementaion-->
+    <dependency>
+      <groupId>org.eclipse.persistence</groupId>
+      <artifactId>org.eclipse.persistence.jpa</artifactId>
+      <version>2.7.0</version>
+    </dependency>
+    <!-- h2-->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.196</version>
     </dependency>
   </dependencies>
 
   <build>
+    <!-- add resource file-->
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
     <pluginManagement>
       <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>

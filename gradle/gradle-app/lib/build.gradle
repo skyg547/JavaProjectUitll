@@ -28,3 +28,16 @@ dependencies {
 }
 */
 apply plugin: 'java'
+
+task doit(dependsOn: [compileJava, jar]){
+
+    doLast{
+        println "*** compile java ! ***"
+        tasks.compileJava
+        println "*** create jar ! ***"
+        tasks.jar
+        println "*** compiled and created JAR completed"
+
+    }
+}
+

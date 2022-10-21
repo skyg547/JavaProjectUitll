@@ -27,28 +27,4 @@ dependencies {
     implementation 'com.google.guava:guava:31.0.1-jre'
 }
 */
-
-def arr = ["one", "two", "three", "four","five"];
-
-arr.each{s -> task "$s" {
-    doLast {
-        println("this is $s task");
-    }
-}}
-
-task hello {
-    doLast {
-        println();
-        println("welcom gradle");
-
-        def total = 0;
-        for(def i in 1..num.toInteger()){
-            total += i;
-        }
-        println("total: " + total);
-    } 
-
-    doFirst{
-        println("start");
-    }
-}
+apply plugin: 'java'

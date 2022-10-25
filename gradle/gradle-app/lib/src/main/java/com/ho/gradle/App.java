@@ -1,14 +1,14 @@
 package com.ho.gradle;
 
-public class App{
+public class App {
 
     public static void main(String[] args) {
         App app = new App();
 
-        System.out.println("===========App class ======")
+        System.out.println("===========App class ======");
 
         app.showMessage("tard");
-        System.out.println("===========App class ======")
+        System.out.println("===========App class ======");
     }
 
     private boolean showMessage(String name) {
@@ -16,16 +16,16 @@ public class App{
             System.out.println(this.getMessage(name));
         } catch (Exception e) {
             // TODO: handle exception
-            System.out.println("error")
+            System.out.println("error");
 
-        } finally{
+        } finally {
             return true;
         }
-        
+
     }
 
     public String getMessage(String name) {
-        return "hi" + name
-        
+        return "hi" + name;
+
     }
 }

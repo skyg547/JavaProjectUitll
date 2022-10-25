@@ -29,6 +29,7 @@ dependencies {
 */
 apply plugin: 'java'
 
+
 task doit(dependsOn: [compileJava, jar]){
 
     doLast{
@@ -40,4 +41,7 @@ task doit(dependsOn: [compileJava, jar]){
 
     }
 }
+apply plugin: 'application'
 
+
+mainClassName = "com.ho.gradle.App"

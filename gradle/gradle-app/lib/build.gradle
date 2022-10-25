@@ -46,11 +46,9 @@ apply plugin: 'application'
 mainClassName = "com.ho.gradle.App"
 
 repositories{
-    mavenCentral()
-    jcenter()
+    mavenCentral()    
 
 }
 dependencies{
     testImplementation 'junit:junit:4.12'
-    testComplie 'junit:junit:4.12'
 }

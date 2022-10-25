@@ -23,7 +23,7 @@ public class LibraryTest {
         assertTrue(app.showMessage(name));
 
         try {
-            assertTrue(app.getMessage(name), co(name));
+            assertTrue(app.getMessage(name),  true);
         } catch (Exception e ){
             e.printStackTrace();
         }

@@ -11,7 +11,7 @@ public class App {
         System.out.println("===========App class ======");
     }
 
-    private boolean showMessage(String name) {
+    public boolean showMessage(String name) {
         try {
             System.out.println(this.getMessage(name));
         } catch (Exception e) {

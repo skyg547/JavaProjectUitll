@@ -43,5 +43,14 @@ task doit(dependsOn: [compileJava, jar]){
 }
 apply plugin: 'application'
 
-
 mainClassName = "com.ho.gradle.App"
+
+repositories{
+    mavenCentral()
+    jcenter()
+
+}
+dependencies{
+    testImplementation 'junit:junit:4.12'
+    testComplie 'junit:junit:4.12'
+}

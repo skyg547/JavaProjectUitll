@@ -4,3 +4,24 @@
  * This is a general purpose Gradle build.
  * Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.5.1/samples
  */
+
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'org.akhikhl.gretty'
+
+buildscript{
+    repositories{
+        mavenCentral()
+    }
+    
+    dependencies{
+        testImplementation 'junit:junit:4.12'
+        implementation 'javax.servlet:javax.servlet-api:3.1.0'
+        implementation 'org.glassfish.jersey:jersey-bom:2.24.1'
+        implementation 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.24.1'
+
+
+    }
+
+}
